@@ -1,0 +1,48 @@
+/* Dark Theme Variables */
+.theme-dark {
+    /* --text-normal: #ffffff; */
+    --background-primary: hsl(0, 0%, 10%);
+    --background-secondary: hsl(0, 0%, 12%);
+    --background-secondary-alt: hsl(0, 0%, 14%);
+    --background-tertiary: hsl(0, 0%, 10%);
+    --background-accent: #3584e4;
+    --background-floating: #383838;
+    --background-mobile-primary: #1E1E1E;
+    --background-mobile-secondary: #242424;
+    --background-modifier-selected: hsl(0, 0%, 25%);
+    --background-modifier-accent: #242424;
+    --background-modifier-hover: #333333;
+    --background-message-hover: rgba(36, 36, 36, 0.3);
+    --scrollbar-thin-thumb: #9b9b9a;
+    --scrollbar-auto-thumb: #9b9b9a;
+    --scrollbar-auto-track: #212121;
+    --scrollbar-auto-scrollbar-color-thumb: #9b9b9a;
+    --scrollbar-auto-scrollbar-color-track: #242424;
+    --channeltextarea-background: hsl(0, 0%, 16%);
+    --logo-primary: #3584e4;
+    --focus-primary: #3584e4;
+    --activity-card-background: hsl(0, 0%, 14%);
+    --textbox-markdown-syntax: #3584e4;
+    --radio-group-dot-foreground: #3584e4;
+    --input-background: #242424;
+    --profile-body-divider-color: #454545;
+    --brand-experiment-560: #3584e4;
+    --brand-experiment: #3584e4;
+    --control-brand-foreground: #3584e4;
+    --profile-message-input-border-color: #454545;
+    --deprecated-card-bg: #242424;
+    --mention-background: rgba(53, 132, 228, 0.4);
+    --mention-foreground: #bcd6f6;
+    --dnome-base: #242424;
+    --dnome-bg: #1E1E1E;
+    --dnome-sidebar: #242424;
+    --dnome-border: #454545;
+    --dnome-scroll-bg: #212121;
+    --dnome-accent: #3584e4;
+    --dnome-list-item-hover: #333333;
+    --dnome-list-item-hover-selected: #404040;
+    --dnome-list-item-selected: #3A3A3A;
+    --dnome-searchbox: #454545;
+    --dnome-popup-hover: #4C4C4C;
+    --dnome-popup-selected: #5E5E5E;
+}
