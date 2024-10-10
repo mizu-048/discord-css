@@ -1,36 +1,32 @@
 /*for channel list*/
 [class^=sidebar_]:has([class*=avatarWrapper_]) {
-  width: 240px;
-  transition: width 0.2s ease, padding 0.2s ease; /* how fast to open and close the channel list and the padding */
-  transition-delay: 0.2s; /* how long to hover before opening*/
-  &:not(:hover) {
-    transition-delay: 1.5s; /* how to keep open after hover is removed*/
-    padding-left: 35px;
-    width: 0px;
-
-    
+    width: 240px;
+    transition: width 0.2s ease, padding 0.3s ease; /* how fast to open and close the channel list and the padding */
+    transition-delay: 0.2s; /* how long to hover before opening*/
+    &:not(:hover) {
+        transition-delay: 1.5s; /* how to keep open after hover is removed*/
+        padding-left: 40px;
+        width: 0px;
   }
 }
 /*for server list*/
 [class*=guilds_] {
-    transition: width 0.2s ease, padding 0.2s ease;  /* how fast to open and close the server list and the padding */
-    transition-delay: 0.2s; /* how long to hover before opening*/
-  &:not(:hover) {
-    transition-delay: 1.5s; /* how to keep open after hover is removed*/
-    padding-left: 15px;
-    width: 0px;
+    transition: width 0.2s ease, padding 0.3s ease;  /* how fast to open and close the server list and the padding */
+    transition-delay: 0.5s; /* how long to hover before opening*/
+    &:not(:hover) {
+        transition-delay: 1.5s; /* how to keep open after hover is removed*/
+        padding-left: 8px;
+        width: 0px;
   }
 }
 /*for member list*/
 [class^=membersWrap] {
-  min-width: 0;
-  >[class^=members_] {
-    transition: width 0.2s ease; /* how fast to open and close the member list and the padding */
-    transition-delay: 0.5s; /* how long to hover before opening*/
-    &:not(:hover) {
-      width: 7px;
-    }
+    min-width: 0;
+    >[class^=members_] {
+        transition: width 0.2s ease; /* how fast to open and close the member list and the padding */
+        transition-delay: 0.5s; /* how long to hover before opening*/
+        &:not(:hover) {
+        width: 8px;
+        }
   }
 }
-
-
