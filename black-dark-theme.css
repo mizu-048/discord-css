@@ -1,6 +1,6 @@
-/* Dark Theme Variables */
+/* stolen from https://github.com/GeopJr/DNOME/ */
 .theme-dark {
-    /* --text-normal: #ffffff; */
+    --text-normal: hsl(0, 0%, 78%);
     --background-primary: hsl(0, 0%, 10%);
     --background-secondary: hsl(0, 0%, 12%);
     --background-secondary-alt: hsl(0, 0%, 14%);
@@ -33,16 +33,4 @@
     --deprecated-card-bg: #242424;
     --mention-background: rgba(53, 132, 228, 0.4);
     --mention-foreground: #bcd6f6;
-    --dnome-base: #242424;
-    --dnome-bg: #1E1E1E;
-    --dnome-sidebar: #242424;
-    --dnome-border: #454545;
-    --dnome-scroll-bg: #212121;
-    --dnome-accent: #3584e4;
-    --dnome-list-item-hover: #333333;
-    --dnome-list-item-hover-selected: #404040;
-    --dnome-list-item-selected: #3A3A3A;
-    --dnome-searchbox: #454545;
-    --dnome-popup-hover: #4C4C4C;
-    --dnome-popup-selected: #5E5E5E;
 }
