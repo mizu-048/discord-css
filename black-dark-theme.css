@@ -1,5 +1,6 @@
 /* stolen from https://github.com/GeopJr/DNOME/ */
 .theme-dark {
+    --brand-500: hsl(142, 56%, 45%);
     --text-normal: hsl(0, 0%, 78%);
     --background-primary: hsl(0, 0%, 10%);
     --background-secondary: hsl(0, 0%, 12%);
@@ -34,3 +35,6 @@
     --mention-background: rgba(53, 132, 228, 0.4);
     --mention-foreground: #bcd6f6;
 }
+/* .bar_eba0ba{
+    background-color: hsl(0, 0%, 90%);
+    color:#3584e4;} */
