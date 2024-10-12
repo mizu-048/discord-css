@@ -14,7 +14,7 @@ form > div[class^=submitContainer] {
     }
 
     /* move app launcher to a less dumb place */
-    position: relative;
+    /* position: relative; */
   }
   /* align forum channel thing */
   > div { margin-bottom: 0px; border-radius: 0px; }
@@ -26,8 +26,8 @@ form > div[class^=submitContainer] {
     margin-left: auto;
     width: fit-content;
     padding-left: 2px;
-    padding-right: 2px;
-    border-radius: 8px 0px 0px 0px;
+    padding-right: 9px;
+    border-radius: 8px 8px 0px 0px;
     background-color: var(--channeltextarea-background);
   }
   /* make scrollbar meet chatbox */
@@ -42,15 +42,15 @@ form > div[class^=submitContainer] {
 
 /* jump to present */
 div[class^=jumpToPresentBar] {
-  left: unset; right: 0;
-  border-radius: 8px 0px 0px 0px;
-  background-color: var(--channeltextarea-background);
+  left: 0; right: unset;
+  border-radius: 0px 8px 0px 0px;
+  /* background-color: var(--channeltextarea-background); */
+  background-color: #248046;
   > button[class^=barButtonMain] {
     flex: 0 0 auto;
     display: none;
   }
 }
-
 /* move app launcher to a less dumb place */
 div[class^=channelAppLauncher] {
   /* position: absolute;
@@ -58,4 +58,3 @@ div[class^=channelAppLauncher] {
   right: 16px;; */
   display: none;
 }
-
