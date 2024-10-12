@@ -11,7 +11,7 @@
 /* "(edited)" text timestamps */
 span[class*="timestamp_"] time::before {
     content: '✎ ' attr(aria-label);
-    font-size: 0.625rem;
+    font-size: 0.75rem;
     font-weight: 400;}
 /* message header timestamps */
 span[class*="timestampInline_"] time::before {
