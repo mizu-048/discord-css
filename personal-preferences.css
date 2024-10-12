@@ -1,5 +1,36 @@
-/* change message size */
-.markup_f8f345,
-   .messageContent_f9f2ca {
-       font-size: 20px !important;
-   }
+/* change text sizes */
+.markup_f8f345{ font-size: 20px; } /* message  */
+.shiki-table { font-size: 16px; } /* code block */
+.username_f9f2ca{ font-size: 18px; } /* username */
+
+/* don't show unusable actions in mod view from ShowHiddenThings plugin */
+[class^=guildSidebar_] [class^=bottomRow_]:has([class*=bottomRowActionDisabled_]) [class*=bottomRowActionDisabled_] {
+  display: none; }
+
+/* message timestamps */
+/* "(edited)" text timestamps */
+span[class*="timestamp_"] time::before {
+    content: '✎ ' attr(aria-label);
+    font-size: 0.625rem;
+    font-weight: 400;}
+/* message header timestamps */
+span[class*="timestampInline_"] time::before {
+  content: attr(aria-label);
+  font-size: 0.75rem;
+  font-weight: 500;}
+/* header-less multi-line hover timestamps */
+span[class*="timestampVisibleOnHover_"] time::before {
+  content: attr(aria-label);
+  position: absolute;
+  font-size: 0.6rem;
+  line-height: 0.85rem;
+  width: 65px;
+  left: -1px;
+  top: -2px;}
+/* hide the old timestamps */
+span[class*="timestampInline_"], span[class*="timestampVisibleOnHover_"] {
+  font-size: 0rem !important;}
+span[class*="edited_"] {
+    position: relative;
+    right: 95px;
+    color: transparent;}
