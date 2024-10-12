@@ -1,1 +1,5 @@
-
+/* change message size */
+.markup_f8f345,
+   .messageContent_f9f2ca {
+       font-size: 20px !important;
+   }
