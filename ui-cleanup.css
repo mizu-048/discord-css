@@ -1,0 +1,4 @@
+/* remove invite button on channels */
+[class^="iconVisibility_"] [aria-label="Create Invite"] {
+    display: none !important;
+}
