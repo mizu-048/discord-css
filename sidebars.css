@@ -1,32 +1,43 @@
-/*for channel list*/
-[class^=sidebar_]:has([class*=avatarWrapper_]) {
-    width: 240px;
-    transition: width 0.2s ease, padding 0.3s ease; /* how fast to open and close the channel list and the padding */
-    transition-delay: 0.2s; /* how long to hover before opening*/
-    &:not(:hover) {
-        transition-delay: 1.5s; /* how to keep open after hover is removed*/
-        padding-left: 40px;
-        width: 0px;
-  }
+/* Define custom CSS variables */
+:root {
+    --collapsed-channeList-width: 0px;
+    --channelList-width: 240px;
+    --channelList-padding: 35px;
+
+    --collapsed-memberList-width: 0px;
+    --serverList-padding: 15px;
 }
-/*for server list*/
-[class*=guilds_] {
-    transition: width 0.2s ease, padding 0.3s ease;  /* how fast to open and close the server list and the padding */
-    transition-delay: 0.5s; /* how long to hover before opening*/
+/* Channel list styles */
+[class^=base_] > [class^=content] > [class^=sidebar]:not([class^=hidden]) {
+    width: var(--channelList-width) !important;
+    transition: width 0.2s ease, padding 0.3s ease;
+    transition-delay: 0.2s;
     &:not(:hover) {
-        transition-delay: 1.5s; /* how to keep open after hover is removed*/
-        padding-left: 8px;
-        width: 0px;
-  }
+        transition-delay: 1.5s;
+        padding-left: var(--channelList-padding);
+        width: 0px !important;
+    }
 }
-/*for member list*/
-[class^=membersWrap] {
+
+/* Server list styles */
+[class*=guilds_]{
+    transition: width 0.2s ease, padding 0.3s ease;
+    transition-delay: 0.5s;
+    &:not(:hover) {
+        transition-delay: 1.5s;
+        padding-left: var(--serverList-padding);
+        width: 0px;
+    }
+}
+
+/* Member list styles */
+[class^=base_] > [class^=content] > [class^=membersWrap] {
     min-width: 0;
-    >[class^=members_] {
-        transition: width 0.2s ease; /* how fast to open and close the member list and the padding */
-        transition-delay: 0.5s; /* how long to hover before opening*/
+    > [class^=members_] {
+        transition: width 0.2s ease;
+        transition-delay: 0.5s;
         &:not(:hover) {
-        width: 8px;
+            width: 8px;
         }
-  }
+    }
 }
