@@ -1,3 +1,4 @@
+/* stolen from https://github.com/Andrew6rant/Discord-plugins-and-themes/blob/main/RemoveTopBar.theme.css */
 /* Shrinks titlebar down to nothing */
 div[class*="titleBar_"] {
     height: 0px;
