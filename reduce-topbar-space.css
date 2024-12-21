@@ -1,0 +1,41 @@
+/* Shrinks titlebar down to nothing */
+div[class*="titleBar_"] {
+    height: 0px;
+}
+
+/* Removes the "Discord" text on the top left of the screen */
+div[class*="wordmark_"] {
+    display: none;
+}
+/* Hide the _ □ X buttons, they are visible on hover */
+div[class*=winButton_] {
+    top: -4px;
+    /* transform: scale(1); */
+    padding-right: 4px;
+    right: -4px;
+    -webkit-app-region: no-drag !important;
+}
+div[class*=winButton_]:hover {
+    color: var(--currentColor);
+    background-color: hsl(0, 100%, 80%);
+}
+
+/* small hack to avoid https://github.com/electron/electron/issues/1354 */
+[class^="winButtonClose_"],
+[class^="closeButton_"] {
+	-webkit-app-region: no-drag;
+}
+div[class^="upperContainer_"] {
+    -webkit-app-region: drag;
+    width: calc(100% - 88px);
+    margin-top: 8px;
+}
+div[class^="subtitleContainer_"] {
+    margin-top: -12px;
+}
+
+/* revert offset when thread/forum channel is open */
+div[class*="threadSidebarOpen_"] > div > section > div[class^="upperContainer_"] {
+    width: 100%;
+}
+
