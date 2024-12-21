@@ -7,7 +7,7 @@
     --collapsed-memberList-width: 0px;
     --serverList-padding: 15px;
 }
-/* Channel list styles */
+/* Channel list */
 [class^=base_] > [class^=content] > [class^=sidebar]:not([class^=hidden]) {
     width: var(--channelList-width) !important;
     transition: width 0.2s ease, padding 0.3s ease;
@@ -19,7 +19,7 @@
     }
 }
 
-/* Server list styles */
+/* Server list */
 [class*=guilds_]{
     transition: width 0.2s ease, padding 0.3s ease;
     transition-delay: 0.5s;
@@ -30,7 +30,7 @@
     }
 }
 
-/* Member list styles */
+/* Member list */
 [class^=base_] > [class^=content] > [class^=membersWrap] {
     min-width: 0;
     > [class^=members_] {
