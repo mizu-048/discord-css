@@ -5,7 +5,7 @@
     display: flex !important;
 }
 
-/* style it */
+/* style it source: https://github.com/Andrew6rant/Discord-plugins-and-themes/blob/main/BetterMessageButtons.theme.css */ 
 :root {
   --msg-solo-button-width: 36px;
   --msg-grid-button-padding: 32px;
