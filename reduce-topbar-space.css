@@ -31,8 +31,13 @@ div[class^="upperContainer_"] {
     width: calc(100% - 88px);
     margin-top: 8px;
 }
+// reduce height of the top bar
 div[class^="subtitleContainer_"] {
     margin-top: -12px;
+}
+// reduce header height to match top bar
+.header_fd6364{
+    padding: 6px;
 }
 
 /* revert offset when thread/forum channel is open */
