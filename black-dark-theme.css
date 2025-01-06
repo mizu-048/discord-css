@@ -1,12 +1,21 @@
 /* stolen from https://github.com/GeopJr/DNOME/ */
+:root{
+    --accent: #32b362;
+    --secondary-accent: #74d898;
+}
 .theme-dark {
-    --brand-500: hsl(142, 56%, 45%);
-    --text-normal: hsl(0, 0%, 78%);
-    --background-primary: hsl(0, 0%, 10%);
-    --background-secondary: hsl(0, 0%, 12%);
-    --background-secondary-alt: hsl(0, 0%, 14%);
-    --background-tertiary: hsl(0, 0%, 10%);
-    --background-accent: #3584e4;
+    --bg-brand: var(--accent);
+    --brand-500: var(--accent);
+    --text-brand: var(--secondary-accent);
+    --brand-experiment: var(--accent);
+    --brand-experiment-560: var(--accent);
+    --control-brand-foreground: var(--accent);
+    
+    --background-primary: #1a1a1a;
+    --background-secondary: #1f1f1f;
+    --background-secondary-alt: #242424;
+    --background-tertiary: #1a1a1a;
+    --background-accent: var(--accent);
     --background-floating: #383838;
     --background-mobile-primary: #1E1E1E;
     --background-mobile-secondary: #242424;
@@ -20,21 +29,21 @@
     --scrollbar-auto-scrollbar-color-thumb: #9b9b9a;
     --scrollbar-auto-scrollbar-color-track: #242424;
     --channeltextarea-background: hsl(0, 0%, 16%);
-    --logo-primary: #3584e4;
-    --focus-primary: #3584e4;
+    --logo-primary: var(--accent);
+    --focus-primary: var(--accent);
     --activity-card-background: hsl(0, 0%, 14%);
-    --textbox-markdown-syntax: #3584e4;
-    --radio-group-dot-foreground: #3584e4;
+    --textbox-markdown-syntax: var(--accent);
+    --radio-group-dot-foreground: var(--accent);
     --input-background: #242424;
     --profile-body-divider-color: #454545;
-    --brand-experiment-560: #3584e4;
-    --brand-experiment: #3584e4;
-    --control-brand-foreground: #3584e4;
     --profile-message-input-border-color: #454545;
     --deprecated-card-bg: #242424;
     --mention-background: rgba(53, 132, 228, 0.4);
     --mention-foreground: #bcd6f6;
+
+    /* fix forum colors */
+    --bg-overlay-2: var(--background-primary);
+    --bg-overlay-chat: var(--background-primary);
+    --home-background: var(--bg-overlay-2);
+    --__header-bar-background: var(--bg-overlay-2);
 }
-/* .bar_eba0ba{
-    background-color: hsl(0, 0%, 90%);
-    color:#3584e4;} */
