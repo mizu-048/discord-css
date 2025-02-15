@@ -1,7 +1,12 @@
-/* change text sizes */
-.markup_f8f345{ font-size: 20px; } /* message  */
-.shiki-table { font-size: 16px; } /* code block */
-.username_f9f2ca{ font-size: 18px; } /* username */
+:root{
+    --text-size: 23px;
+    --code-size: 16px;
+    --name-size: 18px;
+}
+
+.markup__75297{ font-size: var(--text-size)} /* message  */
+.shiki-table { font-size: var(--code-size); } /* code block */
+.username_c19a55{ font-size: var(--name-size); } /* username */
 
 /* don't show unusable actions in mod view from ShowHiddenThings plugin */
 [class^=guildSidebar_] [class^=bottomRow_]:has([class*=bottomRowActionDisabled_]) [class*=bottomRowActionDisabled_] {
