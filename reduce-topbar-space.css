@@ -36,12 +36,11 @@ div[class^="subtitleContainer_"] {
     margin-top: -12px;
 }
 // reduce header height to match top bar
-.header_fd6364{
+/* .header_f37cb1{
     padding: 6px;
-}
+} */
 
 /* revert offset when thread/forum channel is open */
 div[class*="threadSidebarOpen_"] > div > section > div[class^="upperContainer_"] {
     width: 100%;
 }
-
