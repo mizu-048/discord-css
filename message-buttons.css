@@ -66,3 +66,10 @@ div[class^="buttonsInner_"]:has(div[aria-label="Edit"]) div[aria-label="Reply"] 
 div[class*="popoverReactionHoverBar_"] > div[class^="separator_"] {
   display: none;
 }
+
+
+/* collapsable message action*/
+[class^=buttonsInner_]:not(:hover)>:is(
+  [role=button]:not(:last-child), [class^=separator_]
+){display: none;}
+
