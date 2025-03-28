@@ -18,6 +18,17 @@
         width: 0px !important;
     }
 }
+/* User Panel */
+[class^=panels] {
+    overflow: hidden;
+    max-height: 0; 
+    transition: max-height 0.4s linear;
+}
+[class^=sidebarList]:hover ~ [class^=panels] {
+    max-height: 60px;
+    transition: max-height 0.4s linear;
+}
+[class^=panels]:hover { max-height: 60px; }
 
 /* Server list */
 [class*=guilds_]{
