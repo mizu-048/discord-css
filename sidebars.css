@@ -1,15 +1,15 @@
 /* Define custom CSS variables */
 :root {
     --collapsed-channeList-width: 0px;
-    --channelList-width: 240px;
+/*     --channelList-width: 240px; */
     --channelList-padding: 35px;
 
-    --collapsed-memberList-width: 0px;
+/*     --collapsed-memberList-width: 0px; */
     --serverList-padding: 15px;
 }
 /* Channel list */
-[class^=base_] > [class^=content] > [class^=sidebar]:not([class^=hidden]) {
-    width: var(--channelList-width) !important;
+[class^=base_] > [class^=content] > [class^=sidebar] > [class^=sidebarList]:not([class^=hidden]) {
+    /* width: var(--channelList-width) !important; */
     transition: width 0.2s ease, padding 0.3s ease;
     transition-delay: 0.2s;
     &:not(:hover) {
@@ -31,7 +31,7 @@
 }
 
 /* Member list */
-[class^=base_] > [class^=content] > [class^=membersWrap] {
+/* [class^=base_] > [class^=content] > [class^=membersWrap] {
     min-width: 0;
     > [class^=members_] {
         transition: width 0.2s ease;
@@ -40,4 +40,4 @@
             width: 8px;
         }
     }
-}
+} */
