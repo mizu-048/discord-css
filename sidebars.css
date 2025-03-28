@@ -10,10 +10,10 @@
 /* Channel list */
 [class^=base_] > [class^=content] > [class^=sidebar] > [class^=sidebarList]:not([class^=hidden]) {
     /* width: var(--channelList-width) !important; */
-    transition: width 0.2s ease, padding 0.3s ease;
-    transition-delay: 0.2s;
+    transition: width 0.2s ease, padding 0.3s ease; /* how fast to open and close the channel list and the padding */
+    transition-delay: 0.2s; /* how long to hover before opening*/
     &:not(:hover) {
-        transition-delay: 1.5s;
+        transition-delay: 1.5s; /* how long to keep open after hover is removed */
         padding-left: var(--channelList-padding);
         width: 0px !important;
     }
@@ -21,10 +21,10 @@
 
 /* Server list */
 [class*=guilds_]{
-    transition: width 0.2s ease, padding 0.3s ease;
-    transition-delay: 0.5s;
+    transition: width 0.2s ease, padding 0.3s ease; /* how fast to open and close the server list and the padding */
+    transition-delay: 0.5s; /* how long to hover before opening*/
     &:not(:hover) {
-        transition-delay: 1.5s;
+        transition-delay: 1.5s;  /* how long to keep open after hover is removed */
         padding-left: var(--serverList-padding);
         width: 0px;
     }
@@ -34,7 +34,7 @@
 /* [class^=base_] > [class^=content] > [class^=membersWrap] {
     min-width: 0;
     > [class^=members_] {
-        transition: width 0.2s ease;
+        transition: width 0.2s ease; 
         transition-delay: 0.5s;
         &:not(:hover) {
             width: 8px;
