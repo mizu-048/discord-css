@@ -62,7 +62,11 @@ div[class^=channelAppLauncher] {
 
 
 /* collapsable searchbar */
-.search__49676{order:var(--search-order, 1)} /* change order */
-.search__49676 .searchBar__97492:not(:focus-within,:hover,:has(.clear_fea832)){width:24px} /* bar width */
+
+/* change order */
+/* .search__49676{order:var(--search-order, 1)}  */
+/* bar width */
+/* .search__49676 .searchBar__97492:not(:focus-within,:hover,:has(.clear_fea832)){width:24px}  */
+
 /* .search__49676 .searchBar__97492{background:rgba(0,0,0,0)} */  /* background color */
 /* .iconContainer_fea832{width:24px;height:24px;cursor:pointer} */ /* icon size */
