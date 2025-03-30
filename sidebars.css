@@ -8,7 +8,8 @@
     --serverList-padding: 15px;
 }
 /* Channel list */
-[class^=base_] > [class^=content] > [class^=sidebar] > [class^=sidebarList]:not([class^=hidden]) {
+/* [class^=base_] > [class^=content] > [class^=sidebar] > [class^=sidebarList]:not([class^=hidden]) { */
+[class^=base_] > [class^=content] > [class^=sidebar] :not([class^=hidden]) {
     /* width: var(--channelList-width) !important; */
     transition: width 0.2s ease, padding 0.3s ease; /* how fast to open and close the channel list and the padding */
     transition-delay: 0.2s; /* how long to hover before opening*/
